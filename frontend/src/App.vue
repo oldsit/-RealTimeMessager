@@ -56,6 +56,9 @@ import AppNavbar from './components/AppNavbar.vue';
 import AppFooter from './components/AppFooter.vue';
 import TOSModal from './components/TOSModal.vue';
 
+// Import Firebase to initialize and test its execution
+import './firebase';
+
 export default {
   name: 'App',
   components: {
@@ -114,7 +117,6 @@ export default {
   },
 };
 </script>
-
 <style>
 /* General Reset */
 * {

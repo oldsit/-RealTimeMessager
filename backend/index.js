@@ -1,9 +1,12 @@
 const express = require('express');
 const { Storage } = require('@google-cloud/storage');
 const path = require('path');
+const cors = require('cors');
+
 
 const app = express();
 app.use(express.json()); // Enable parsing JSON in request body
+app.use(cors({ origin: "http://localhost:8080" }));
 
 // Initialize GCP Storage
 const storage = new Storage({
